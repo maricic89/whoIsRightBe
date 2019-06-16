@@ -3,10 +3,10 @@ server:
 
 spring:
   datasource:
-    url: jdbc:mysql://172.17.0.2:3306/wir
+    url: jdbc:postgresql://localhost:5432/wir
     username: wir
     password: wir
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: org.postgresql.Driver
     data-password:
 # ===============================
 # LIQUIBASE
@@ -15,7 +15,7 @@ spring:
     user: wir
     password: wir
     change-log: classpath:liquibase/db/changelog/wir.xml
-    url: jdbc:mysql://172.17.0.2:3306/wir
+    url: jdbc:postgresql://localhost:5432/wir
 # ===============================
 # JPA
 # ===============================
@@ -24,6 +24,9 @@ spring:
     properties:
       hibernate:
         format_sql: true
+        jdbc:
+          lob:
+            non_contextual_creation: true
 # ===============================
 # SMTP EMAIL
 # ===============================

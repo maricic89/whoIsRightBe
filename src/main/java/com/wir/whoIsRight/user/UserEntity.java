@@ -20,13 +20,12 @@ import javax.validation.constraints.NotNull;
 @Getter
 @Setter
 @Entity
-@Table(name = "user")
+@Table(name = "wir_user")
 public class UserEntity {
 
     @Id
     @Column(name = "id", unique = true, nullable = false, updatable = false)
-    @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
-    @GenericGenerator(name = "native", strategy = "native")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(name = "name", nullable = false)
