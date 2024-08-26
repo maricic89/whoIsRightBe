@@ -20,7 +20,7 @@
 <!--		<scripts-connector-java.version>5.1.6</scripts-connector-java.version>-->
 		<spring-security-oauth2.version>2.3.4.RELEASE</spring-security-oauth2.version>
 		<jjwt.version>0.7.0</jjwt.version>
-		<springfox-swagger.version>2.6.1</springfox-swagger.version>
+		<springfox-swagger.version>2.10.0</springfox-swagger.version>
 		<lombok.version>1.18.8</lombok.version>
 	</properties>
 
